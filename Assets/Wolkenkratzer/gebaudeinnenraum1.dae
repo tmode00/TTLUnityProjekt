@@ -1,0 +1,434 @@
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>DeleD Collada Exporter (version 2.01)</authoring_tool>
+    </contributor>
+    <created>2015-05-17T19:00:32</created>
+    <modified>2015-05-17T19:00:32</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="texture0" name="system">
+      <init_from>system.bmp</init_from>
+    </image>
+    <image id="texture1" name="metal-black_00296594">
+      <init_from>metal-black_00296594.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="material0" name="system">
+      <instance_effect url="#material0-layer0-effect" />
+    </material>
+    <material id="material19" name="metal-black_00296594">
+      <instance_effect url="#material19-layer0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="material0-layer0-effect" name="material0-layer0-effect">
+      <profile_COMMON>
+        <newparam sid="texture0-surface">
+          <surface type="2D">
+            <init_from>texture0</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="texture0-sampler">
+          <sampler2D>
+            <source>texture0-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="texture0-sampler" texcoord="tex0" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="material19-layer0-effect" name="material19-layer0-effect">
+      <profile_COMMON>
+        <newparam sid="texture1-surface">
+          <surface type="2D">
+            <init_from>texture1</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="texture1-sampler">
+          <sampler2D>
+            <source>texture1-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="texture1-sampler" texcoord="tex0" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="mesh7-geometry" name="cube7">
+      <mesh>
+        <source id="mesh7-geometry-position">
+          <float_array id="mesh7-geometry-position-array" count="24">1377.915 256.5751 21.47201 1313.915 256.5751 21.47201 1313.915 256.5751 -170.528 1377.915 256.5751 -170.528 1377.915 384.5751 21.47201 1313.915 384.5751 21.47201 1313.915 384.5751 -170.528 1377.915 384.5751 -170.528</float_array>
+          <technique_common>
+            <accessor source="#mesh7-geometry-position-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh7-geometry-normal">
+          <float_array id="mesh7-geometry-normal-array" count="72">1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#mesh7-geometry-normal-array" count="24" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh7-geometry-uv">
+          <float_array id="mesh7-geometry-uv-array" count="48">1.33225 -3.004493 -0.1677501 -3.004493 -0.1677501 -2.004493 1.33225 -2.004493 10.26496 1.33225 10.76496 1.33225 10.76496 -0.1677501 10.26496 -0.1677501 10.26496 0.1677501 10.76496 0.1677501 10.76496 -1.33225 10.26496 -1.33225 10.76496 -3.004493 10.26496 -3.004493 10.26496 -2.004493 10.76496 -2.004493 0.1677501 -3.004493 -1.33225 -3.004493 -1.33225 -2.004493 0.1677501 -2.004493 -10.26496 -3.004493 -10.76496 -3.004493 -10.76496 -2.004493 -10.26496 -2.004493</float_array>
+          <technique_common>
+            <accessor source="#mesh7-geometry-uv-array" count="24" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh7-geometry-vertex">
+          <input semantic="POSITION" source="#mesh7-geometry-position" />
+        </vertices>
+        <polylist material="material0" count="6">
+          <input semantic="VERTEX" source="#mesh7-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh7-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh7-geometry-uv" offset="1" set="1" />
+          <vcount>4 4 4 4 4 4</vcount>
+          <p>7 0 4 1 0 2 3 3 2 4 3 5 0 6 1 7 5 8 4 9 7 10 6 11 4 12 5 13 1 14 0 15 5 16 6 17 2 18 1 19 6 20 7 21 3 22 2 23</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="mesh8-geometry" name="cube8">
+      <mesh>
+        <source id="mesh8-geometry-position">
+          <float_array id="mesh8-geometry-position-array" count="24">1377.915 256.5751 211.9351 1313.915 256.5751 211.9351 1313.915 256.5751 19.93512 1377.915 256.5751 19.93512 1377.915 384.5751 211.9351 1313.915 384.5751 211.9351 1313.915 384.5751 19.93512 1377.915 384.5751 19.93512</float_array>
+          <technique_common>
+            <accessor source="#mesh8-geometry-position-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh8-geometry-normal">
+          <float_array id="mesh8-geometry-normal-array" count="72">1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#mesh8-geometry-normal-array" count="24" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh8-geometry-uv">
+          <float_array id="mesh8-geometry-uv-array" count="48">-0.1557431 -3.004493 -1.655743 -3.004493 -1.655743 -2.004493 -0.1557431 -2.004493 10.26496 -0.1557431 10.76496 -0.1557431 10.76496 -1.655743 10.26496 -1.655743 10.26496 1.655743 10.76496 1.655743 10.76496 0.1557431 10.26496 0.1557431 10.76496 -3.004493 10.26496 -3.004493 10.26496 -2.004493 10.76496 -2.004493 1.655743 -3.004493 0.1557431 -3.004493 0.1557431 -2.004493 1.655743 -2.004493 -10.26496 -3.004493 -10.76496 -3.004493 -10.76496 -2.004493 -10.26496 -2.004493</float_array>
+          <technique_common>
+            <accessor source="#mesh8-geometry-uv-array" count="24" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh8-geometry-vertex">
+          <input semantic="POSITION" source="#mesh8-geometry-position" />
+        </vertices>
+        <polylist material="material0" count="6">
+          <input semantic="VERTEX" source="#mesh8-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh8-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh8-geometry-uv" offset="1" set="1" />
+          <vcount>4 4 4 4 4 4</vcount>
+          <p>7 0 4 1 0 2 3 3 2 4 3 5 0 6 1 7 5 8 4 9 7 10 6 11 4 12 5 13 1 14 0 15 5 16 6 17 2 18 1 19 6 20 7 21 3 22 2 23</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="mesh16-geometry" name="in">
+      <mesh>
+        <source id="mesh16-geometry-position">
+          <float_array id="mesh16-geometry-position-array" count="123">2688 320 -320 2688 320 -576 2048 320 -320 2048 320 -576 2048 384 -256 2688 384 -256 2048 512 -256 2688 512 -256 2048 576 -320 2688 576 -320 2688 576 -576 2048 576 -576 2048 512 -640 2688 512 -640 2048 384 -640 2688 384 -640 2048 384 -320 2048 512 -320 2048 512 -576 2048 384 -576 2672 326.4 -326.4 2672 326.4 -569.6 2064 326.4 -326.4 2064 326.4 -569.6 2672 387.2 -265.6 2064 387.2 -265.6 2672 508.8 -265.6 2064 508.8 -265.6 2672 569.6 -326.4 2064 569.6 -326.4 2672 569.6 -569.6 2064 569.6 -569.6 2672 508.8 -630.4 2064 508.8 -630.4 2064 563.2 -576 2672 387.2 -630.4 2064 387.2 -630.4 2064 512 -320 2064 384 -320 2064 384 -576 2064 512 -576</float_array>
+          <technique_common>
+            <accessor source="#mesh16-geometry-position-array" count="41" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh16-geometry-normal">
+          <float_array id="mesh16-geometry-normal-array" count="438">0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071069 0.7071066 0 0.7071069 0.7071066 0 0.7071069 0.7071066 0 0.7071069 0.7071066 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071102 0.7071034 0 -0.7071102 0.7071034 0 -0.7071102 0.7071034 0 -0.7071102 0.7071034 1 0 0 1 0 0 1 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.7071066 -0.7071069 0 0.7071066 -0.7071069 0 0.7071066 -0.7071069 0 0.7071066 -0.7071069 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#mesh16-geometry-normal-array" count="146" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh16-geometry-uv">
+          <float_array id="mesh16-geometry-uv-array" count="292">16 -3 16.125 -3 16.125 -4 16 -4 16 -2.5 16.125 -2.5 16.125 -4.5 16 -4.5 20.875 -3.975 16.125 -3.975 16.125 -3.025 20.875 -3.025 -16 -3 -16 -4 -16.125 -4 -16.125 -3 21 -4.5 16 -4.5 16 -2.5 21 -2.5 2.5 -4.5 2 -4 2 -3 2.5 -2.5 4.5 -2.5 5 -3 5 -4 4.5 -4.5 16 4.5 16.125 4.5 16.125 2.5 16 2.5 21 2.5 16 2.5 16 4.5 21 4.5 16 -3 21 -3 21 -4 16 -4 16 -2 21 -2 21 -2.5 16 -2.5 20.875 -4.925 16.125 -4.925 16.125 -4.45 20.875 -4.45 16 2.5 21 2.5 21 2 16 2 16 5 21 5 21 4.5 16 4.5 -20.875 -3.025 -16.125 -3.025 -16.125 -3.975 -20.875 -3.975 16 -4.5 21 -4.5 21 -5 16 -5 -16 -4 -21 -4 -21 -3 -16 -3 4.5 -4 4.5 -4.4 2.5 -4 4.5 -4.4 4.45 -4.45 2.55 -4.45 2.075 -3.975 2.5 -4 20.875 4.925 16.125 4.5 16.125 4.925 20.875 4.925 20.875 4.45 16.125 4.45 16.125 4.5 2.55 -2.55 4.5 -3 2.5 -3 2.55 -2.55 4.45 -2.55 4.925 -3.025 4.5 -3 2.075 -3.975 2.5 -3 2.5 -4 2.075 -3.975 2.075 -3.025 2.55 -2.55 2.5 -3 16.125 2.075 16.125 2.55 20.875 2.55 20.875 2.075 20.875 2.55 16.125 2.55 16.125 4.45 20.875 4.45 20.875 -4.45 16.125 -4.45 16.125 -2.55 20.875 -2.55 -20.875 -3.025 -20.875 -2.55 -16.125 -2.55 -16.125 -3.025 -4.5 -4.5 -5 -4 -5 -3 -4.5 -3 -4.5 -4 -5 -3 -4.5 -2.5 -2.5 -2.5 -2.5 -3 -4.5 -3 -2.55 -2.55 -2.075 -3.025 -2.075 -3.975 -2.55 -4.45 -4.45 -4.45 -4.925 -3.975 -4.925 -3.025 -4.45 -2.55 -2 -4 -2.5 -4.5 -4.5 -4.5 -4.5 -4 -2.5 -4 -2 -3 -2 -4 -2.5 -4 -2.5 -3 -2.5 -2.5 4.925 -3.975 4.5 -4.4 4.5 -4 4.5 -3 4.925 -3.025</float_array>
+          <technique_common>
+            <accessor source="#mesh16-geometry-uv-array" count="146" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh16-geometry-vertex">
+          <input semantic="POSITION" source="#mesh16-geometry-position" />
+        </vertices>
+        <polylist material="material0" count="32">
+          <input semantic="VERTEX" source="#mesh16-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh16-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh16-geometry-uv" offset="1" set="1" />
+          <vcount>4 4 4 4 4 8 4 4 4 4 4 4 4 4 4 4 3 5 3 4 3 4 3 4 4 4 4 4 5 5 8 5</vcount>
+          <p>19 0 39 1 40 2 18 3 16 4 38 5 39 6 19 7 32 8 33 9 36 10 35 11 16 12 17 13 37 14 38 15 10 16 11 17 8 18 9 19 9 20 7 21 5 22 0 23 1 24 15 25 13 26 10 27 18 28 40 29 37 30 17 31 0 32 2 33 3 34 1 35 4 36 5 37 7 38 6 39 6 40 7 41 9 42 8 43 35 44 36 45 23 46 21 47 2 48 0 49 5 50 4 51 14 52 15 53 1 54 3 55 24 56 25 57 27 58 26 59 11 60 10 61 13 62 12 63 12 64 13 65 15 66 14 67 40 68 34 69 37 70 34 71 31 72 29 73 27 74 37 75 32 76 34 77 33 78 32 79 30 80 31 81 34 82 22 83 39 84 38 85 22 86 23 87 36 88 39 89 27 90 38 91 37 92 27 93 25 94 22 95 38 96 27 97 29 98 28 99 26 100 28 101 29 102 31 103 30 104 21 105 23 106 22 107 20 108 24 109 20 110 22 111 25 112 11 113 12 114 14 115 19 116 18 117 14 118 3 119 2 120 16 121 19 122 20 123 24 124 26 125 28 126 30 127 32 128 35 129 21 130 6 131 8 132 11 133 18 134 17 135</p>
+        </polylist>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh16-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh16-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh16-geometry-uv" offset="1" set="1" />
+          <p>4 136 6 137 17 138 16 139 2 140 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh16-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh16-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh16-geometry-uv" offset="1" set="1" />
+          <p>33 141 34 142 40 143 39 144 36 145</p>
+        </polygons>
+      </mesh>
+    </geometry>
+    <geometry id="mesh17-geometry" name="out">
+      <mesh>
+        <source id="mesh17-geometry-position">
+          <float_array id="mesh17-geometry-position-array" count="180">2112 320 576 2688 320 576 2688 320 320 2112 320 320 2048 320 576 2048 320 320 2048 384 640 2688 384 640 2048 512 640 2688 512 640 2048 576 576 2112 576 576 2688 576 576 2112 576 320 2688 576 320 2048 576 320 2048 512 256 2688 512 256 2048 384 256 2688 384 256 2048 384 576 2048 512 576 2048 512 320 2048 384 320 2672 326.4 569.6 2112 326.4 569.6 2112 326.4 326.4 2672 326.4 326.4 2064 326.4 569.6 2064 326.4 326.4 2672 332.8 576 2672 387.2 630.4 2064 387.2 630.4 2064 332.8 576 2112 332.8 576 2672 508.8 630.4 2064 508.8 630.4 2672 563.2 576 2112 563.2 576 2064 563.2 576 2672 569.6 569.6 2112 569.6 569.6 2064 569.6 569.6 2672 569.6 326.4 2112 569.6 326.4 2064 569.6 326.4 2672 563.2 320 2672 508.8 265.6 2064 508.8 265.6 2064 563.2 320 2112 563.2 320 2672 387.2 265.6 2064 387.2 265.6 2672 332.8 320 2112 332.8 320 2064 332.8 320 2064 512 576 2064 384 576 2064 384 320 2064 512 320</float_array>
+          <technique_common>
+            <accessor source="#mesh17-geometry-position-array" count="60" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh17-geometry-normal">
+          <float_array id="mesh17-geometry-normal-array" count="624">0 -0.7071085 0.7071052 0 -0.7071085 0.7071052 0 -0.7071085 0.7071052 0 -0.7071085 0.7071052 0 -0.7071084 0.7071051 0 -0.7071084 0.7071051 0 -0.7071084 0.7071051 0 -0.7071084 0.7071051 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.7071066 0.707107 0 -0.7071066 0.707107 0 -0.7071066 0.707107 0 -0.7071066 0.707107 0 -0.7071066 0.707107 0 -0.7071102 -0.7071034 0 -0.7071102 -0.7071034 0 -0.7071102 -0.7071034 0 -0.7071102 -0.7071034 0 -0.7071102 -0.7071034 0 -0.7071102 -0.7071034 0 -0.7071102 -0.7071034 0 -0.7071102 -0.7071034 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0.7071084 -0.707105 0 0.7071084 -0.707105 0 0.7071084 -0.707105 0 0.7071084 -0.707105 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.7071084 -0.7071051 0 0.7071084 -0.7071051 0 0.7071084 -0.7071051 0 0.7071084 -0.7071051 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0.7071066 0.7071069 0 0.7071066 0.7071069 0 0.7071066 0.7071069 0 0.7071066 0.7071069 0 0.7071066 0.7071069 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#mesh17-geometry-normal-array" count="208" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh17-geometry-uv">
+          <float_array id="mesh17-geometry-uv-array" count="416">16.5 -4.45 16.125 -4.45 16.125 -4.4 16.5 -4.4 20.875 -4.4 20.875 -4.45 16.5 -4.45 16.5 -4.4 20.875 2.5 16.5 2.5 16.5 2.55 20.875 2.55 16.125 -3.975 16.125 -3.025 20.875 -3.025 20.875 -3.975 16.5 -2.5 16.125 -2.5 16.125 -2.075 20.875 -2.075 20.875 -2.5 16.5 -4.5 16.125 -4.5 16.125 -4.45 16.5 -4.45 20.875 -4.5 16.5 -4.5 16.5 -4.45 20.875 -4.45 16.5 -4.45 16.125 -4.45 16.125 -2.55 16.5 -2.55 20.875 -4.45 16.5 -4.45 16.5 -2.55 20.875 -2.55 16.5 2.5 16.125 2.5 16.125 2.55 16.5 2.55 16.125 -3 16.125 -4 16 -4 16 -3 -16 -4 -16.125 -4 -16.125 -3 -16 -3 16.125 -2.5 16.125 -4.5 16 -4.5 16 -2.5 16.125 4.5 16.125 2.5 16 2.5 16 4.5 2.5 -2.6 2.55 -2.55 4.45 -2.55 4.5 -2.6 4.5 -4.4 4.45 -4.45 2.55 -4.45 2.5 -4.4 -2.5 -4 -2.5 -4.4 -2.55 -4.45 -4.45 -4.45 -4.5 -4.4 -4.5 -4 -4.5 -2.6 -4.45 -2.55 -2.55 -2.55 -2.5 -2.6 -2.5 -3 -4.5 -3 2.075 -3.975 2.075 -3.025 2.5 -2.6 2.5 -4.4 4.5 -2.6 4.925 -3.025 4.925 -3.975 4.5 -4.4 16.5 2.5 21 2.5 21 2 16 2 16 2.5 16 4.5 16.5 4.5 16.5 2.5 16 2.5 2.5 -3 2.5 -2.5 4.5 -2.5 4.5 -3 -21 -4 -21 -3 -16 -3 -16 -4 16.5 4.5 21 4.5 21 2.5 16.5 2.5 16 -2.5 16.5 -2.5 16.5 -4.5 16 -4.5 16.5 -2.5 21 -2.5 21 -4.5 16.5 -4.5 21 -3 21 -4 16 -4 16 -3 16.5 -4.5 21 -4.5 21 -5 16 -5 16 -4.5 2.5 -4.5 2.5 -4 4.5 -4 4.5 -4.5 20.875 4.5 20.875 4.45 16.5 4.45 16.5 4.5 16.5 4.5 16.125 4.5 16.125 4.925 20.875 4.925 20.875 4.5 -16.125 -3.025 -16.125 -3.975 -20.875 -3.975 -20.875 -3.025 16.5 4.45 16.125 4.45 16.125 4.5 16.5 4.5 16.5 2.55 16.125 2.55 16.125 4.45 16.5 4.45 -2.5 -2.5 -2 -3 -2 -4 -2.5 -4.5 -4.5 -4.5 -5 -4 -5 -3 -4.5 -2.5 20.875 2.55 16.5 2.55 16.5 4.45 20.875 4.45 -2.5 -2.5 -2.5 -4.5 -4.5 -4.5 -4.5 -2.5 20.875 -3.025 16.125 -3.025 16.125 -2.6 16.5 -2.6 20.875 -2.6 20.875 -4.925 16.125 -4.925 16.125 -4.5 16.5 -4.5 20.875 -4.5 -2.5 -4 -2.5 -3 -2.5 -2.6 -2.075 -3.025 -2.075 -3.975 -2.5 -4.4 -4.5 -3 -4.5 -4 -4.5 -4.4 -4.925 -3.975 -4.925 -3.025 -4.5 -2.6 21 -2 21 -2.5 16.5 -2.5 16 -2.5 16 -2 21 5 21 4.5 16.5 4.5 16 4.5 16 5 2 -4 2 -3 2.5 -2.5 2.5 -3 2.5 -4 2.5 -4.5 4.5 -4 4.5 -3 4.5 -2.5 5 -3 5 -4 4.5 -4.5</float_array>
+          <technique_common>
+            <accessor source="#mesh17-geometry-uv-array" count="208" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh17-geometry-vertex">
+          <input semantic="POSITION" source="#mesh17-geometry-position" />
+        </vertices>
+        <polylist material="material0" count="38">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <vcount>4 4 4 4 5 4 4 4 4 4 4 4 4 4 8 6 6 4 4 5 4 4 4 4 4 4 4 5 4 4 5 4 4 4 4 4 4 4</vcount>
+          <p>44 0 45 1 49 2 50 3 46 4 43 5 44 6 50 7 53 8 54 9 26 10 27 11 48 12 52 13 51 14 47 15 50 16 49 17 48 18 47 19 46 20 38 21 39 22 42 23 41 24 37 25 38 26 41 27 40 28 41 29 42 30 45 31 44 32 40 33 41 34 44 35 43 36 54 37 55 38 29 39 26 40 58 41 59 42 22 43 23 44 21 45 56 46 57 47 20 48 59 49 56 50 21 51 22 52 57 53 58 54 23 55 20 56 53 57 27 58 24 59 30 60 37 61 40 62 43 63 46 64 59 65 49 66 45 67 42 68 39 69 56 70 33 71 28 72 29 73 55 74 58 75 57 76 47 77 51 78 53 79 46 80 30 81 31 82 35 83 37 84 13 85 14 86 17 87 16 88 15 89 10 90 11 91 13 92 15 93 23 94 5 95 4 96 20 97 17 98 19 99 18 100 16 101 11 102 12 103 14 104 13 105 5 106 3 107 0 108 4 109 3 110 2 111 1 112 0 113 7 114 9 115 8 116 6 117 0 118 1 119 7 120 6 121 4 122 15 123 22 124 21 125 10 126 30 127 24 128 25 129 34 130 34 131 33 132 32 133 31 134 30 135 32 136 36 137 35 138 31 139 25 140 28 141 33 142 34 143 26 144 29 145 28 146 25 147 2 148 19 149 17 150 14 151 12 152 9 153 7 154 1 155 27 156 26 157 25 158 24 159 2 160 14 161 12 162 1 163</p>
+        </polylist>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>51 164 52 165 55 166 54 167 53 168 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>35 169 36 170 39 171 38 172 37 173 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>59 174 58 175 55 176 52 177 48 178 49 179 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>57 180 56 181 39 182 36 183 32 184 33 185 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>19 186 2 187 3 188 5 189 18 190 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>9 191 12 192 11 193 10 194 8 195 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>16 196 18 197 5 198 23 199 22 200 15 201 </p>
+        </polygons>
+        <polygons material="material0" count="1">
+          <input semantic="VERTEX" source="#mesh17-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh17-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh17-geometry-uv" offset="1" set="1" />
+          <p>21 202 20 203 4 204 6 205 8 206 10 207</p>
+        </polygons>
+      </mesh>
+    </geometry>
+    <geometry id="mesh18-geometry" name="user_defined18">
+      <mesh>
+        <source id="mesh18-geometry-position">
+          <float_array id="mesh18-geometry-position-array" count="150">2048 384 -576 2048 512 -576 2048 768 -1024 2048 0 -1024 2048 0 1024 2048 384 -320 2048 768 1024 2048 682.6667 576 2048 512 576 2048 384 576 2048 384 320 2048 512 320 2048 512 -320 1984 512 -576 1984 384 -576 1984 0 -1024 1984 768 -1024 1984 768 1024 1984 512 -320 1984 0 1024 1984 128 576 1984 384 576 1984 512 576 1984 512 320 1984 384 320 1984 384 -320 1024 768 2048 1024 0 2048 -1024 768 2048 -1024 0 2048 -2048 768 1024 -2048 0 1024 -1024 768 -2048 -2048 768 -1024 -2048 0 -1024 -1024 0 -2048 1024 768 -2048 1024 0 -2048 1024 0 1984 1024 768 1984 -1024 0 1984 -1024 768 1984 -1984 0 1024 -1984 768 1024 -1024 0 -1984 -1984 0 -1024 -1984 768 -1024 -1024 768 -1984 1024 0 -1984 1024 768 -1984</float_array>
+          <technique_common>
+            <accessor source="#mesh18-geometry-position-array" count="50" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh18-geometry-normal">
+          <float_array id="mesh18-geometry-normal-array" count="552">-1 0 0 -1 0 0 -1 0 0 -1 0 0 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0.7071068 0 0.7071068 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0.7071068 0 -0.7071068 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -0.7071068 0 -0.7071068 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#mesh18-geometry-normal-array" count="184" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh18-geometry-uv">
+          <float_array id="mesh18-geometry-uv-array" count="368">0.5333334 -0.64 -0.5333334 -0.64 -0.5333334 0 0.5333334 0 1.066667 -0.64 0.5333334 -0.64 0.5333334 0 1.066667 0 1.033333 0 1.033333 -0.64 0.5333334 -0.64 0.5333334 0 0.5333334 0 0.5333334 -0.64 -0.5333334 -0.64 -0.5333334 0 -0.5333334 0 0.5333334 0 0.5333334 -0.64 -0.5333334 -0.64 -1.033333 0 -0.5333334 0 -0.5333334 -0.64 -1.033333 -0.64 -0.5333334 -1.706667 -1.066667 -0.8533334 -1.066667 0.8533334 -0.5333334 1.706667 0.5333334 1.706667 1.066667 0.8533334 1.066667 -0.8533334 0.5333334 -1.706667 -1.066667 -0.8533334 -1.066667 0.8533334 -0.5333334 1.706667 0.5333334 1.706667 1.066667 0.8533334 1.066667 -0.8533334 0.5333334 -1.706667 -0.5333334 -1.706667 0.5333334 -0.64 0.5333334 0 1.066667 0 1.066667 -0.64 -1.066667 -0.64 -1.066667 0 -0.5333334 0 -0.5333334 -0.64 -1.066667 -0.64 -1.066667 0 -0.5333334 0 -0.5333334 -0.64 -0.5333334 -0.64 -0.5333334 0 0.5333334 0 0.5333334 -0.64 0.5333334 0 0.5333334 -0.64 -0.5333334 -0.64 -0.5333334 0 -0.5333334 0 -0.5333334 -0.64 -1.033333 -0.64 -1.033333 0 -0.5333334 -0.64 -0.5333334 0 0.5333334 0 0.5333334 -0.64 1.033333 0 1.033333 -0.64 0.5333334 -0.64 0.5333334 0 0.5333334 -0.64 -0.5333334 -0.64 -0.3 -0.4266667 0.3 -0.4266667 0.3 -0.1066667 0.5333334 0 0.5333334 -0.64 0.3 -0.4266667 0.3 -0.32 -0.1666667 -0.4266667 0.1666667 -0.32 0.1666667 -0.4266667 -0.5333334 -0.64 -0.5333334 0 -0.3 -0.32 -0.3 -0.4266667 0.3 -0.4266667 -0.3 -0.5688889 -0.1666667 -0.4266667 0.1666667 -0.4266667 -0.1666667 -0.4266667 -0.1666667 -0.32 0.1666667 -0.32 0.1666667 -0.4266667 0.3 -0.1066667 0.3 -0.32 0.1666667 -0.32 0.3 -0.4266667 0.5333334 -0.64 -0.5333334 -0.64 -0.3 -0.5688889 -0.3 -0.5688889 -0.3 -0.4266667 -0.1666667 -0.4266667 -0.3 -0.5688889 -0.5333334 -0.64 -0.5333334 0 -0.3 -0.32 -0.3 -0.4266667 -1.033333 -0.8533334 -1.033333 0.8533334 -0.5333334 1.653333 0.5333334 1.653333 1.033333 0.8533334 1.033333 -0.8533334 0.5333334 -1.653333 -0.5333334 -1.653333 -0.5333334 -1.653333 -1.033333 -0.8533334 -1.033333 0.8533334 -0.5333334 1.653333 0.5333334 1.653333 1.033333 0.8533334 1.033333 -0.8533334 0.5333334 -1.653333 -0.1666667 -0.32 -0.3 -0.32 -0.5333334 0 0.5333334 0 0.3 -0.1066667 -0.1666667 -0.4266667 -0.1666667 -0.32 0.3 -0.1066667 0.1666667 -0.32 -0.5333334 0 0.5333334 0 0.3 -0.32 -0.3 -0.32 0.5333334 0 0.5333334 -0.64 0.3 -0.4266667 0.3 -0.32 16 -3 16 -4 15.5 -4 15.5 -3 -16 -3 -15.5 -3 -15.5 -4 -16 -4 16 -2.5 16 -4.5 15.5 -4.5 15.5 -2.5 16 4.5 16 2.5 15.5 2.5 15.5 4.5 15.5 -4 15.5 -3 16 -3 16 -4 -15.5 -4 -16 -4 -16 -3 -15.5 -3 15.5 2.5 15.5 4.5 16 4.5 16 2.5 15.5 -4.5 15.5 -2.5 16 -2.5 16 -4.5 0 -0.32 0 -0.32 0 -0.32 0 -0.32 0 -0.4266667 0 -0.4266667 0 -0.4266667 0 -0.4266667</float_array>
+          <technique_common>
+            <accessor source="#mesh18-geometry-uv-array" count="184" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh18-geometry-vertex">
+          <input semantic="POSITION" source="#mesh18-geometry-position" />
+        </vertices>
+        <polylist material="material19" count="32">
+          <input semantic="VERTEX" source="#mesh18-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh18-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh18-geometry-uv" offset="1" set="1" />
+          <vcount>4 4 4 4 4 4 8 8 4 4 4 4 4 4 4 4 4 5 3 4 4 4 3 4 3 5 8 8 5 4 4 4</vcount>
+          <p>30 0 33 1 34 2 31 3 36 4 2 5 3 6 37 7 44 8 47 9 46 10 45 11 48 12 49 13 47 14 44 15 42 16 45 17 46 18 43 19 48 20 15 21 16 22 49 23 29 24 31 25 34 26 35 27 37 28 3 29 4 30 27 31 33 32 30 33 28 34 26 35 6 36 2 37 36 38 32 39 30 40 31 41 29 42 28 43 32 44 35 45 34 46 33 47 26 48 27 49 4 50 6 51 28 52 29 53 27 54 26 55 40 56 41 57 39 58 38 59 42 60 43 61 41 62 40 63 36 64 37 65 35 66 32 67 38 68 39 69 17 70 19 71 17 72 16 73 13 74 22 75 20 76 19 77 17 78 22 79 21 80 18 81 24 82 23 83 16 84 15 85 14 86 13 87 1 88 7 89 11 90 12 91 11 92 10 93 5 94 12 95 20 96 21 97 24 98 1 99 2 100 6 101 7 102 7 103 8 104 11 105 7 106 6 107 4 108 9 109 8 110 45 111 42 112 40 113 38 114 19 115 15 116 48 117 44 118 41 119 43 120 46 121 47 122 49 123 16 124 17 125 39 126 25 127 14 128 15 129 19 130 20 131 18 132 25 133 20 134 24 135 4 136 3 137 0 138 9 139 3 140 2 141 1 142 0 143</p>
+        </polylist>
+        <polylist material="material0" count="8">
+          <input semantic="VERTEX" source="#mesh18-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh18-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh18-geometry-uv" offset="1" set="1" />
+          <vcount>4 4 4 4 4 4 4 4</vcount>
+          <p>10 144 11 145 23 146 24 147 9 148 21 149 22 150 8 151 11 152 8 153 22 154 23 155 9 156 10 157 24 158 21 159 13 160 14 161 0 162 1 163 18 164 12 165 5 166 25 167 18 168 13 169 1 170 12 171 14 172 25 173 5 174 0 175</p>
+        </polylist>
+        <polygons material="material19" count="1">
+          <input semantic="VERTEX" source="#mesh18-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh18-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh18-geometry-uv" offset="1" set="1" />
+          <p>0 176 5 177 10 178 9 179 </p>
+        </polygons>
+        <polygons material="material19" count="1">
+          <input semantic="VERTEX" source="#mesh18-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh18-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh18-geometry-uv" offset="1" set="1" />
+          <p>13 180 18 181 23 182 22 183</p>
+        </polygons>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="untitled">
+      <node id="root" name="root">
+        <scale>1 1 1</scale>
+        <node id="mesh7" name="cube7">
+          <instance_geometry url="#mesh7-geometry">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="material0" target="#material0">
+                  <bind_vertex_input semantic="tex0" input_semantic="TEX_COORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="mesh8" name="cube8">
+          <instance_geometry url="#mesh8-geometry">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="material0" target="#material0">
+                  <bind_vertex_input semantic="tex0" input_semantic="TEX_COORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="mesh16" name="in">
+          <instance_geometry url="#mesh16-geometry">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="material0" target="#material0">
+                  <bind_vertex_input semantic="tex0" input_semantic="TEX_COORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="mesh17" name="out">
+          <instance_geometry url="#mesh17-geometry">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="material0" target="#material0">
+                  <bind_vertex_input semantic="tex0" input_semantic="TEX_COORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="mesh18" name="user_defined18">
+          <instance_geometry url="#mesh18-geometry">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="material19" target="#material19">
+                  <bind_vertex_input semantic="tex0" input_semantic="TEX_COORD" input_set="0" />
+                </instance_material>
+                <instance_material symbol="material0" target="#material0">
+                  <bind_vertex_input semantic="tex0" input_semantic="TEX_COORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode" />
+  </scene>
+</COLLADA>

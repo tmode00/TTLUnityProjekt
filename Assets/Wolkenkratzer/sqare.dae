@@ -1,0 +1,109 @@
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>DeleD Collada Exporter (version 2.01)</authoring_tool>
+    </contributor>
+    <created>2015-05-02T17:48:26</created>
+    <modified>2015-05-02T17:48:26</modified>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="texture0" name="system">
+      <init_from>system.bmp</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="material0" name="system">
+      <instance_effect url="#material0-layer0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="material0-layer0-effect" name="material0-layer0-effect">
+      <profile_COMMON>
+        <newparam sid="texture0-surface">
+          <surface type="2D">
+            <init_from>texture0</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="texture0-sampler">
+          <sampler2D>
+            <source>texture0-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="texture0-sampler" texcoord="tex0" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="mesh1-geometry" name="user_defined1">
+      <mesh>
+        <source id="mesh1-geometry-position">
+          <float_array id="mesh1-geometry-position-array" count="48">2.356448 -2.51765 -0.32 -2.763552 -2.51765 -0.32 -2.763552 -2.51765 0.32 2.356448 -2.51765 0.32 -2.763552 2.60235 -0.32 -2.763552 2.60235 0.32 2.356448 2.60235 -0.32 2.356448 2.60235 0.32 1.716448 -1.87765 -0.32 -2.123552 -1.87765 -0.32 -2.123552 1.96235 -0.32 1.716448 1.96235 -0.32 -2.123552 -1.87765 0.32 1.716448 -1.87765 0.32 -2.123552 1.96235 0.32 1.716448 1.96235 0.32</float_array>
+          <technique_common>
+            <accessor source="#mesh1-geometry-position-array" count="16" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh1-geometry-normal">
+          <float_array id="mesh1-geometry-normal-array" count="288">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#mesh1-geometry-normal-array" count="96" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh1-geometry-uv">
+          <float_array id="mesh1-geometry-uv-array" count="192">0.01340975 0.0025 0.01340975 -0.0025 -0.01659025 -0.0025 -0.01659025 -0.0025 -0.01659025 0.0025 0.01340975 0.0025 0.0025 -0.01533086 -0.0025 -0.01533086 -0.0025 0.01466914 -0.0025 0.01466914 0.0025 0.01466914 0.0025 -0.01533086 0.0025 0.01966914 0.0025 -0.02033086 -0.0025 -0.02033086 -0.0025 -0.02033086 -0.0025 0.01966914 0.0025 0.01966914 -0.0025 0.01466914 0.0025 0.01466914 0.0025 -0.01533086 0.0025 -0.01533086 -0.0025 -0.01533086 -0.0025 0.01466914 0.01840975 0.01966914 0.01340975 0.01466914 -0.01659025 0.01466914 -0.01659025 0.01466914 -0.02159025 0.01966914 0.01840975 0.01966914 0.02159025 0.01966914 0.01659025 0.01466914 -0.01340975 0.01466914 -0.01340975 0.01466914 -0.01840975 0.01966914 0.02159025 0.01966914 -0.01659025 -0.0025 -0.01659025 0.0025 0.01340975 0.0025 0.01340975 0.0025 0.01340975 -0.0025 -0.01659025 -0.0025 0.01840975 0.0025 0.01840975 -0.0025 -0.02159025 -0.0025 -0.02159025 -0.0025 -0.02159025 0.0025 0.01840975 0.0025 0.01840975 0.01966914 0.01840975 -0.02033086 0.01340975 -0.01533086 0.01340975 -0.01533086 0.01340975 0.01466914 0.01840975 0.01966914 -0.01840975 -0.02033086 -0.01840975 0.01966914 -0.01340975 0.01466914 -0.01340975 0.01466914 -0.01340975 -0.01533086 -0.01840975 -0.02033086 -0.02159025 -0.02033086 -0.02159025 0.01966914 -0.01659025 0.01466914 -0.01659025 0.01466914 -0.01659025 -0.01533086 -0.02159025 -0.02033086 0.01840975 -0.02033086 -0.02159025 -0.02033086 -0.01659025 -0.01533086 -0.01659025 -0.01533086 0.01340975 -0.01533086 0.01840975 -0.02033086 0.0025 0.01966914 0.0025 -0.02033086 -0.0025 -0.02033086 -0.0025 -0.02033086 -0.0025 0.01966914 0.0025 0.01966914 -0.02159025 0.0025 0.01840975 0.0025 0.01840975 -0.0025 0.01840975 -0.0025 -0.02159025 -0.0025 -0.02159025 0.0025 0.02159025 -0.02033086 -0.01840975 -0.02033086 -0.01340975 -0.01533086 -0.01340975 -0.01533086 0.01659025 -0.01533086 0.02159025 -0.02033086 0.02159025 0.01966914 0.02159025 -0.02033086 0.01659025 -0.01533086 0.01659025 -0.01533086 0.01659025 0.01466914 0.02159025 0.01966914</float_array>
+          <technique_common>
+            <accessor source="#mesh1-geometry-uv-array" count="96" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh1-geometry-vertex">
+          <input semantic="POSITION" source="#mesh1-geometry-position" />
+        </vertices>
+        <polylist material="material0" count="32">
+          <input semantic="VERTEX" source="#mesh1-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#mesh1-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#mesh1-geometry-uv" offset="1" set="1" />
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+          <p>11 0 15 1 14 2 14 3 10 4 11 5 10 6 14 7 12 8 12 9 9 10 10 11 2 12 5 13 4 14 4 15 1 16 2 17 8 18 13 19 15 20 15 21 11 22 8 23 3 24 13 25 12 26 12 27 2 28 3 29 1 30 9 31 8 32 8 33 0 34 1 35 9 36 12 37 13 38 13 39 8 40 9 41 0 42 3 43 2 44 2 45 1 46 0 47 3 48 7 49 15 50 15 51 13 52 3 53 6 54 0 55 8 56 8 57 11 58 6 59 5 60 2 61 12 62 12 63 14 64 5 65 7 66 5 67 14 68 14 69 15 70 7 71 0 72 6 73 7 74 7 75 3 76 0 77 5 78 7 79 6 80 6 81 4 82 5 83 4 84 6 85 11 86 11 87 10 88 4 89 1 90 4 91 10 92 10 93 9 94 1 95</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="untitled">
+      <node id="root" name="root">
+        <scale>1 1 1</scale>
+        <node id="mesh1" name="user_defined1">
+          <instance_geometry url="#mesh1-geometry">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="material0" target="#material0">
+                  <bind_vertex_input semantic="tex0" input_semantic="TEX_COORD" input_set="0" />
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode" />
+  </scene>
+</COLLADA>

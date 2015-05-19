@@ -1,0 +1,590 @@
+<scene version="1.6">
+  <settings name="new scene" author="" comments="" shadowOpacity="75">
+    <ambient r="255" g="255" b="255" />
+  </settings>
+  <materials highestID="26">
+    <category name="System">
+      <material id="0" name="system" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="System\system.bmp" />
+        </layer>
+      </material>
+    </category>
+    <category name="Floors">
+      <material id="1" name="Floor02" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Floors\Floor02.jpg" />
+        </layer>
+      </material>
+      <material id="2" name="Floor04" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Floors\Floor04.jpg" />
+        </layer>
+      </material>
+      <material id="3" name="Floor10" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Floors\Floor10.jpg" />
+        </layer>
+      </material>
+      <material id="4" name="Floor11" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Floors\Floor11.jpg" />
+        </layer>
+      </material>
+    </category>
+    <category name="Nature">
+      <material id="5" name="Water01" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Nature\Water01.jpg" />
+        </layer>
+      </material>
+    </category>
+    <category name="Roofs">
+      <material id="6" name="Roof03" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Roofs\Roof03.jpg" />
+        </layer>
+      </material>
+      <material id="7" name="Roof04" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Roofs\Roof04.jpg" />
+        </layer>
+      </material>
+    </category>
+    <category name="Walls">
+      <material id="8" name="Wall01" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Walls\Wall01.jpg" />
+        </layer>
+      </material>
+      <material id="9" name="Wall02" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Walls\Wall02.jpg" />
+        </layer>
+      </material>
+      <material id="10" name="Wall06" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Walls\Wall06.jpg" />
+        </layer>
+      </material>
+      <material id="11" name="Wall10" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Walls\Wall10.jpg" />
+        </layer>
+      </material>
+      <material id="12" name="Wall11" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Walls\Wall11.jpg" />
+        </layer>
+      </material>
+      <material id="13" name="Wall12" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Walls\Wall12.jpg" />
+        </layer>
+      </material>
+    </category>
+    <category name="Wood">
+      <material id="14" name="Wood01" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wood\Wood01.jpg" />
+        </layer>
+      </material>
+      <material id="15" name="Wood02" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wood\Wood02.jpg" />
+        </layer>
+      </material>
+    </category>
+    <category name="Wolkenkratzer">
+      <material id="16" name="wolkenkratzer_512" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\wolkenkratzer_512.jpg" />
+        </layer>
+      </material>
+      <material id="17" name="wolkenkratzerbeinacht_512" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\wolkenkratzerbeinacht_512.jpg" />
+        </layer>
+      </material>
+      <material id="18" name="staehlernerwolkenkratzer_512" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\staehlernerwolkenkratzer_512.jpg" />
+        </layer>
+      </material>
+      <material id="19" name="metal-black_00296594" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\metal-black_00296594.jpg" />
+        </layer>
+      </material>
+      <material id="20" name="large_floor_1a" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\large_floor_1a.png" />
+        </layer>
+      </material>
+      <material id="21" name="smetal3" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\smetal3.jpg" />
+        </layer>
+      </material>
+      <material id="22" name="waben_large_floor_2" used="true" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\waben_large_floor_2.png" />
+        </layer>
+      </material>
+      <material id="23" name="waben_large_floor_1" used="true" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\waben_large_floor_1.png" />
+        </layer>
+      </material>
+      <material id="24" name="waben_large_floor_2b" used="true" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\waben_large_floor_2b.png" />
+        </layer>
+      </material>
+      <material id="25" name="material25" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\waben_large_floor_2b.png" />
+        </layer>
+      </material>
+      <material id="26" name="waben_large_floor_2c" used="false" lightmap="true" castShadows="true" receiveShadows="true">
+        <raytracing ambientReflection="0.1" diffuseReflection="0.9">
+          <specularColor r="255" g="255" b="255" />
+          <reflectiveColor r="255" g="255" b="255" />
+        </raytracing>
+        <layer type="texture" blend="replace">
+          <texture file="Wolkenkratzer\waben_large_floor_2c.png" />
+        </layer>
+      </material>
+    </category>
+  </materials>
+  <primitives highestID="3">
+    <primitive id="1" name="user defined1" type="userdefined" visible="true" snap="none" autoUV="true" groupID="-1" skeletonID="-1">
+      <vertices>
+        <vertex id="0" x="512" y="0" z="512" jointID="-1" />
+        <vertex id="1" x="-768" y="0" z="512" jointID="-1" />
+        <vertex id="2" x="-768" y="768" z="256" jointID="-1" />
+        <vertex id="3" x="512" y="768" z="256" jointID="-1" />
+        <vertex id="4" x="-768" y="0" z="-768" jointID="-1" />
+        <vertex id="5" x="-768" y="768" z="-512" jointID="-1" />
+        <vertex id="6" x="512" y="0" z="-768" jointID="-1" />
+        <vertex id="7" x="512" y="768" z="-512" jointID="-1" />
+        <vertex id="8" x="512" y="512" z="64" jointID="-1" />
+        <vertex id="9" x="512" y="256" z="64" jointID="-1" />
+        <vertex id="10" x="512" y="256" z="-320" jointID="-1" />
+        <vertex id="11" x="512" y="512" z="-320" jointID="-1" />
+        <vertex id="12" x="480" y="748.8" z="236.8" jointID="-1" />
+        <vertex id="13" x="-736" y="748.8" z="236.8" jointID="-1" />
+        <vertex id="14" x="-736" y="19.2" z="480" jointID="-1" />
+        <vertex id="15" x="480" y="19.2" z="480" jointID="-1" />
+        <vertex id="16" x="-736" y="748.8" z="-492.8" jointID="-1" />
+        <vertex id="17" x="-736" y="19.2" z="-736" jointID="-1" />
+        <vertex id="18" x="480" y="748.8" z="-492.8" jointID="-1" />
+        <vertex id="19" x="480" y="19.2" z="-736" jointID="-1" />
+        <vertex id="20" x="480" y="256" z="64" jointID="-1" />
+        <vertex id="21" x="480" y="512" z="64" jointID="-1" />
+        <vertex id="22" x="480" y="512" z="-320" jointID="-1" />
+        <vertex id="23" x="480" y="256" z="-320" jointID="-1" />
+      </vertices>
+      <polygons>
+        <poly mid="22">
+          <vertex vid="23" u0="-0.625" v0="-0.5" />
+          <vertex vid="20" u0="0.125" v0="-0.5" />
+          <vertex vid="15" u0="0.9375" v0="-0.0375" />
+          <vertex vid="19" u0="-1.4375" v0="-0.0375" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="22" u0="-0.625" v0="-1" />
+          <vertex vid="23" u0="-0.625" v0="-0.5" />
+          <vertex vid="19" u0="-1.4375" v0="-0.0375" />
+          <vertex vid="18" u0="-0.9625" v0="-1.4625" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="21" u0="0.125" v0="-1" />
+          <vertex vid="22" u0="-0.625" v0="-1" />
+          <vertex vid="18" u0="-0.9625" v0="-1.4625" />
+          <vertex vid="12" u0="0.4625" v0="-1.4625" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="11" u0="0.625" v0="-1" />
+          <vertex vid="8" u0="-0.125" v0="-1" />
+          <vertex vid="3" u0="-0.5" v0="-1.5" />
+          <vertex vid="7" u0="1" v0="-1.5" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="10" u0="0.625" v0="-0.5" />
+          <vertex vid="11" u0="0.625" v0="-1" />
+          <vertex vid="7" u0="1" v0="-1.5" />
+          <vertex vid="6" u0="1.5" v0="0" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="9" u0="-0.125" v0="-0.5" />
+          <vertex vid="10" u0="0.625" v0="-0.5" />
+          <vertex vid="6" u0="1.5" v0="0" />
+          <vertex vid="0" u0="-1" v0="0" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="13" u0="-1.4375" v0="-0.4625" />
+          <vertex vid="12" u0="0.9375" v0="-0.4625" />
+          <vertex vid="18" u0="0.9375" v0="0.9625" />
+          <vertex vid="16" u0="-1.4375" v0="0.9625" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="14" u0="-1.4375" v0="0.9375" />
+          <vertex vid="17" u0="-1.4375" v0="-1.4375" />
+          <vertex vid="19" u0="0.9375" v0="-1.4375" />
+          <vertex vid="15" u0="0.9375" v0="0.9375" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="16" u0="-1.4375" v0="-1.4625" />
+          <vertex vid="18" u0="0.9375" v0="-1.4625" />
+          <vertex vid="19" u0="0.9375" v0="-0.0375" />
+          <vertex vid="17" u0="-1.4375" v0="-0.0375" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="13" u0="-0.4625" v0="-1.4625" />
+          <vertex vid="16" u0="0.9625" v0="-1.4625" />
+          <vertex vid="17" u0="1.4375" v0="-0.0375" />
+          <vertex vid="14" u0="-0.9375" v0="-0.0375" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="2" u0="-1.5" v0="0.5" />
+          <vertex vid="5" u0="-1.5" v0="-1" />
+          <vertex vid="7" u0="1" v0="-1" />
+          <vertex vid="3" u0="1" v0="0.5" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="1" u0="-1.5" v0="-1" />
+          <vertex vid="0" u0="1" v0="-1" />
+          <vertex vid="6" u0="1" v0="1.5" />
+          <vertex vid="4" u0="-1.5" v0="1.5" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="4" u0="1.5" v0="0" />
+          <vertex vid="6" u0="-1" v0="0" />
+          <vertex vid="7" u0="-1" v0="-1.5" />
+          <vertex vid="5" u0="1.5" v0="-1.5" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="1" u0="1" v0="0" />
+          <vertex vid="4" u0="-1.5" v0="0" />
+          <vertex vid="5" u0="-1" v0="-1.5" />
+          <vertex vid="2" u0="0.5" v0="-1.5" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="9" u0="1" v0="0.125" />
+          <vertex vid="20" u0="0.9375" v0="0.125" />
+          <vertex vid="23" u0="0.9375" v0="-0.625" />
+          <vertex vid="10" u0="1" v0="-0.625" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="11" u0="1" v0="0.625" />
+          <vertex vid="22" u0="0.9375" v0="0.625" />
+          <vertex vid="21" u0="0.9375" v0="-0.125" />
+          <vertex vid="8" u0="1" v0="-0.125" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="23" u0="0.9375" v0="-0.5" />
+          <vertex vid="22" u0="0.9375" v0="-1" />
+          <vertex vid="11" u0="1" v0="-1" />
+          <vertex vid="10" u0="1" v0="-0.5" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="8" u0="-1" v0="-1" />
+          <vertex vid="21" u0="-0.9375" v0="-1" />
+          <vertex vid="20" u0="-0.9375" v0="-0.5" />
+          <vertex vid="9" u0="-1" v0="-0.5" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="13" u0="1.4375" v0="-1.4625" />
+          <vertex vid="14" u0="1.4375" v0="-0.0375" />
+          <vertex vid="15" u0="-0.9375" v0="-0.0375" />
+          <vertex vid="12" u0="-0.9375" v0="-1.4625" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="1" u0="-1.5" v0="0" />
+          <vertex vid="2" u0="-1.5" v0="-1.5" />
+          <vertex vid="3" u0="1" v0="-1.5" />
+          <vertex vid="0" u0="1" v0="0" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="15" u0="0.9375" v0="-0.0375" />
+          <vertex vid="20" u0="0.125" v0="-0.5" />
+          <vertex vid="21" u0="0.125" v0="-1" />
+          <vertex vid="12" u0="0.4625" v0="-1.4625" />
+        </poly>
+        <poly mid="22">
+          <vertex vid="8" u0="-0.125" v0="-1" />
+          <vertex vid="9" u0="-0.125" v0="-0.5" />
+          <vertex vid="0" u0="-1" v0="0" />
+          <vertex vid="3" u0="-0.5" v0="-1.5" />
+        </poly>
+      </polygons>
+    </primitive>
+    <primitive id="2" name="user defined2" type="userdefined" visible="true" snap="none" autoUV="true" groupID="-1" skeletonID="-1">
+      <vertices>
+        <vertex id="0" x="1024" y="0" z="512" jointID="-1" />
+        <vertex id="1" x="512" y="0" z="512" jointID="-1" />
+        <vertex id="2" x="512" y="768" z="256" jointID="-1" />
+        <vertex id="3" x="1024" y="768" z="256" jointID="-1" />
+        <vertex id="4" x="512" y="256" z="64" jointID="-1" />
+        <vertex id="5" x="512" y="512" z="64" jointID="-1" />
+        <vertex id="6" x="512" y="0" z="-320" jointID="-1" />
+        <vertex id="7" x="512" y="0" z="-768" jointID="-1" />
+        <vertex id="8" x="512" y="768" z="-512" jointID="-1" />
+        <vertex id="9" x="512" y="512" z="-320" jointID="-1" />
+        <vertex id="10" x="512" y="256" z="-320" jointID="-1" />
+        <vertex id="11" x="1024" y="0" z="-768" jointID="-1" />
+        <vertex id="12" x="1024" y="768" z="-512" jointID="-1" />
+        <vertex id="13" x="960" y="256" z="64" jointID="-1" />
+        <vertex id="14" x="960" y="512" z="64" jointID="-1" />
+        <vertex id="15" x="960" y="512" z="-320" jointID="-1" />
+        <vertex id="16" x="960" y="256" z="-320" jointID="-1" />
+      </vertices>
+      <polygons>
+        <poly mid="23">
+          <vertex vid="9" u0="-0.625" v0="-1" />
+          <vertex vid="10" u0="-0.625" v0="-0.5" />
+          <vertex vid="6" u0="-0.625" v0="0" />
+          <vertex vid="7" u0="-1.5" v0="0" />
+          <vertex vid="8" u0="-1" v0="-1.5" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="5" u0="0.125" v0="-1" />
+          <vertex vid="9" u0="-0.625" v0="-1" />
+          <vertex vid="8" u0="-1" v0="-1.5" />
+          <vertex vid="2" u0="0.5" v0="-1.5" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="4" u0="0.125" v0="-0.5" />
+          <vertex vid="5" u0="0.125" v0="-1" />
+          <vertex vid="2" u0="0.5" v0="-1.5" />
+          <vertex vid="1" u0="1" v0="0" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="2" u0="1" v0="-1.5" />
+          <vertex vid="3" u0="2" v0="-1.5" />
+          <vertex vid="0" u0="2" v0="0" />
+          <vertex vid="1" u0="1" v0="0" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="12" u0="-2" v0="-1.5" />
+          <vertex vid="8" u0="-1" v0="-1.5" />
+          <vertex vid="7" u0="-1" v0="0" />
+          <vertex vid="11" u0="-2" v0="0" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="5" u0="-1" v0="-1" />
+          <vertex vid="4" u0="-1" v0="-0.5" />
+          <vertex vid="13" u0="-1.875" v0="-0.5" />
+          <vertex vid="14" u0="-1.875" v0="-1" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="16" u0="1.875" v0="-0.5" />
+          <vertex vid="10" u0="1" v0="-0.5" />
+          <vertex vid="9" u0="1" v0="-1" />
+          <vertex vid="15" u0="1.875" v0="-1" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="13" u0="0.125" v0="-0.5" />
+          <vertex vid="16" u0="-0.625" v0="-0.5" />
+          <vertex vid="15" u0="-0.625" v0="-1" />
+          <vertex vid="14" u0="0.125" v0="-1" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="9" u0="1" v0="0.625" />
+          <vertex vid="5" u0="1" v0="-0.125" />
+          <vertex vid="14" u0="1.875" v0="-0.125" />
+          <vertex vid="15" u0="1.875" v0="0.625" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="4" u0="1" v0="0.125" />
+          <vertex vid="10" u0="1" v0="-0.625" />
+          <vertex vid="16" u0="1.875" v0="-0.625" />
+          <vertex vid="13" u0="1.875" v0="0.125" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="10" u0="-0.625" v0="-0.5" />
+          <vertex vid="4" u0="0.125" v0="-0.5" />
+          <vertex vid="1" u0="1" v0="0" />
+          <vertex vid="6" u0="-0.625" v0="0" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="12" u0="1" v0="-1.5" />
+          <vertex vid="11" u0="1.5" v0="0" />
+          <vertex vid="0" u0="-1" v0="0" />
+          <vertex vid="3" u0="-0.5" v0="-1.5" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="11" u0="2" v0="1.5" />
+          <vertex vid="7" u0="1" v0="1.5" />
+          <vertex vid="6" u0="1" v0="0.625" />
+          <vertex vid="1" u0="1" v0="-1" />
+          <vertex vid="0" u0="2" v0="-1" />
+        </poly>
+        <poly mid="23">
+          <vertex vid="8" u0="1" v0="-1" />
+          <vertex vid="12" u0="2" v0="-1" />
+          <vertex vid="3" u0="2" v0="0.5" />
+          <vertex vid="2" u0="1" v0="0.5" />
+        </poly>
+      </polygons>
+    </primitive>
+    <primitive id="3" name="turL" type="cube" visible="true" snap="vertex" autoUV="false" groupID="-1" skeletonID="-1">
+      <vertices>
+        <vertex id="0" x="256" y="192" z="-64" jointID="-1" />
+        <vertex id="1" x="192" y="192" z="-64" jointID="-1" />
+        <vertex id="2" x="192" y="192" z="-320" jointID="-1" />
+        <vertex id="3" x="256" y="192" z="-320" jointID="-1" />
+        <vertex id="4" x="256" y="576" z="-64" jointID="-1" />
+        <vertex id="5" x="192" y="576" z="-64" jointID="-1" />
+        <vertex id="6" x="192" y="576" z="-320" jointID="-1" />
+        <vertex id="7" x="256" y="576" z="-320" jointID="-1" />
+      </vertices>
+      <polygons>
+        <poly mid="24">
+          <vertex vid="0" u0="0.9406477" v0="1.004442" />
+          <vertex vid="1" u0="0.8816001" v0="1.004442" />
+          <vertex vid="5" u0="0.8788546" v0="0.01868199" />
+          <vertex vid="4" u0="0.9379022" v0="0.01868199" />
+        </poly>
+        <poly mid="24">
+          <vertex vid="1" u0="0.9412583" v0="1.000537" />
+          <vertex vid="2" u0="0.004954896" v0="1.000537" />
+          <vertex vid="6" u0="0.002209355" v0="0.001049046" />
+          <vertex vid="5" u0="0.9385127" v0="0.001049046" />
+        </poly>
+        <poly mid="24">
+          <vertex vid="2" u0="0.9379022" v0="0.986809" />
+          <vertex vid="3" u0="0.8788546" v0="0.9840635" />
+          <vertex vid="7" u0="0.876109" v0="0.03674108" />
+          <vertex vid="6" u0="0.9379022" v0="0.03674108" />
+        </poly>
+        <poly mid="24">
+          <vertex vid="3" u0="0.005028632" v0="1.001696" />
+          <vertex vid="0" u0="0.9411845" v0="1.001696" />
+          <vertex vid="4" u0="0.938439" v0="0.002208744" />
+          <vertex vid="7" u0="0.002283092" v0="0.002208744" />
+        </poly>
+        <poly mid="24">
+          <vertex vid="1" u0="0.5744048" v0="0.03125" />
+          <vertex vid="0" u0="0.6499256" v0="0.03125" />
+          <vertex vid="3" u0="0.6499256" v0="0.3333333" />
+          <vertex vid="2" u0="0.5744048" v0="0.3333333" />
+        </poly>
+        <poly mid="24">
+          <vertex vid="6" u0="0.5744048" v0="0.3645833" />
+          <vertex vid="7" u0="0.6499256" v0="0.3645833" />
+          <vertex vid="4" u0="0.6499256" v0="0.6666666" />
+          <vertex vid="5" u0="0.5744048" v0="0.6666666" />
+        </poly>
+      </polygons>
+    </primitive>
+  </primitives>
+  <skeletons />
+  <lights highestID="3" />
+  <paths highestID="3" />
+</scene>
